@@ -63,13 +63,13 @@ class SudokuSolver
         blk_parts = ['-' * (blk_size * 2 + 1)] * blk_size
         h_line = "-#{blk_parts.join('+')}-"
 
-        for r in 0..(dim-1)
+        for r in 0..(dim - 1)
         	if r % blk_size == 0 then
         		puts(h_line)
         	end
 
         	curr_line = '| '
-        	for c in 0..(dim-1)
+        	for c in 0..(dim - 1)
         		curr_line += "#{board[r * dim + c]} "
 
         		if c % blk_size == (blk_size - 1) then
